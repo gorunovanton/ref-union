@@ -20,14 +20,16 @@
   "scripts": {
     "test": "node-gyp rebuild --directory test && mocha -gc --reporter spec"
   },
+  "peerDependencies": {
+    "ref": "*",
+    "ref-struct": "*"
+  },
   "dependencies": {
-    "debug": "2",
-    "ref": "1"
+    "debug": "2"
   },
   "devDependencies": {
     "mocha": "*",
     "nan": "2",
-    "ref-struct": "1",
     "bindings": "1"
   }
 }
